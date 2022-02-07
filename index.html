@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>UploadX</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>UploadX</h1>
+  <div class="contact">
+  <form method="post" enctype="multipart/form-data" action="https://formspree.io/f/mdobkbjq" id="image-form">
+		<div class="one_col">
+			<textarea rows="4" cols="20" placeholder="Upload Message"></textarea>
+			<span class="error"></span>
+		</div>
+		<div class="one_col file-upload">
+			<div id="file"><ul id="image-list"><p></p></ul></div>
+			<input type="file" class="file" name="images" id="images"/>
+			<span class="error"></span>
+		</div>
+		<div class="one_col">
+			<input id="submit" type="submit" value="Submit" />
+		</div>
+		<span class="clear"></span>
+	</form>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
