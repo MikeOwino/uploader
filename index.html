@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>UploadX</title>
+   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+	<div data-netlify-identity-menu></div>
+
+  <!-- Add a simpler button:
+    Simple button that will open the modal.
+  -->
+  <div data-netlify-identity-button>Login with Netlify Identity</div>
 <!-- partial:index.partial.html -->
 <h1>UploadX</h1>
   <div class="contact">
-  <form method="post" enctype="multipart/form-data" action="https://formspree.io/f/mdobkbjq" id="image-form">
+  <form action="https://formspree.io/f/mdobkbjq" method="POST" enctype="multipart/form-data" id="image-form">
 		<div class="one_col">
 			<textarea rows="4" cols="20" placeholder="Upload Message"></textarea>
 			<span class="error"></span>
